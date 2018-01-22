@@ -10,8 +10,8 @@ package:
 source:
   fn: plm_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/plm_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/plm/plm_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/plm_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/plm/plm_{{ version }}.tar.gz
   sha256: 05f5494b5b4b018c149b193671a60c32753504034a4142be51a27ebc3e5224a8
 
 
