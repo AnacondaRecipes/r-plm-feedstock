@@ -14,16 +14,10 @@ source:
     - {{ cran_mirror }}/src/contrib/Archive/plm/plm_{{ version }}.tar.gz
   sha256: 05f5494b5b4b018c149b193671a60c32753504034a4142be51a27ebc3e5224a8
 
-
-  # patches:
-   # List any patch files here
-   # - fix.patch
-
 build:
   merge_build_host: True  # [win]
   # If this is a new build for the same version, increment the build number.
   number: 0
-
 
   # This is required to make R link correctly on Linux.
   rpaths:
