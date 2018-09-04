@@ -8,7 +8,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: plm_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/plm_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/plm/plm_{{ version }}.tar.gz
@@ -27,6 +26,7 @@ build:
 # Suggests: AER, car, pcse, clusterSEs, clubSandwich, pglm, spdep, splm, statmod, Ecdat, pder, stargazer, texreg, foreign
 requirements:
   build:
+    - {{posix}}zip               # [win]
 
   host:
     - r-base
